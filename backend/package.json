@@ -1,0 +1,22 @@
+{
+  "name": "play-this-backend",
+  "version": "1.0.0",
+  "description": "Music collabration",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "music",
+    "collab"
+  ],
+  "author": "go",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.15",
+    "socket.io": "^2.1.1"
+  }
+}

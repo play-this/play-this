@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+
+</head>
+
+<body>
+
+    <script>
+        $(function () {
+            var socket = io('http://localhost:3000');
+
+            socket.emit('join', { username: 'kay', password: 'something' })
+
+            socket.on("message_from_server", data => {
+                alert(data.msg);
+            })
+        });
+    </script>
+
+</body>
+
+</html>

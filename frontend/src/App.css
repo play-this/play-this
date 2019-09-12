@@ -1,0 +1,174 @@
+.App {
+    padding: 3rem;
+    font-family: 'Rubik';
+    margin-bottom: 1rem
+}
+
+h1 {
+    font-size: 3rem
+}
+
+.join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.username_input {
+    font-size: 1rem;
+    padding: 0.5;
+}
+
+.myrow {
+    display: flex;
+    flex: 1;
+    align-items: flex-start;
+    justify-content: center
+}
+
+.left {
+    flex: 0.6
+}
+
+.join-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1
+}
+
+.playlist {
+    width: 80%;
+    margin-bottom: 1rem
+}
+
+.hoverpointer:hover{
+  cursor: pointer;
+}
+
+.right {
+    flex: 0.4;
+}
+
+.innerPlaylist {
+    max-height: 40vh;
+    overflow: auto;
+}
+
+.playlistItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.current {
+    margin-bottom: 1rem
+}
+
+.current-user {
+    margin-bottom: 1rem
+}
+
+.members {
+    max-height: 30vh;
+    overflow: auto;
+}
+
+.membersItem {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    align-items: center
+}
+
+.requests {
+    
+    max-height: 30vh;
+    overflow: auto
+}
+
+.requestName {
+    color: crimson
+}
+
+.card{
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 0;
+  background: #eee;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 0 3px #ccc)
+}
+
+.share-playlist {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.share-playlist .clipboard {
+    display: flex;
+    align-self: center;
+    margin-left: 1.5rem
+}
+
+.share-playlist .clipboard button{
+    font-size: 1.5rem;
+    padding: 2px;
+    background: #eee;
+    border-radius: 5px;
+    border: 2px solid #aaa;
+    width: 50px;
+    text-align: center
+}
+
+.share-playlist .clipboard button:hover{
+  cursor: pointer;
+}
+
+.headerRight{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center
+}
+
+@media only screen and (max-width: 600px) {
+    .App {
+        padding: 0rem;
+        padding-top: 1rem
+    }
+    .current {
+        margin-bottom: 1rem
+    }
+    .current-user {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 1rem
+    }
+    .leftMargin {
+        margin-left: 1rem;
+        margin-right: 1rem
+    }
+    .playlist {
+        margin-left: 1rem;
+        width: 92%;
+        margin-right: 1rem;
+    }
+    .innerPlaylist{
+      max-height: none
+    }
+    .myrow {
+        flex-direction: column;
+    }
+    .left{
+      flex: 1
+    }
+    .right {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        width: 92%
+    }
+}
